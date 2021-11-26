@@ -1,15 +1,16 @@
 
-var url = "https://mywebsite.com/logger"
+const url = "https://mywebsite.com/logger"
 
-function logFunction(message) {
+function myFunction(message) {
     // Send http request
     console.log(`message: `, message)
 }
 
-logFunction("This is simple Message!")
+console.log(`Console Only`)
 
+// myFunction("This is simple Message!")
 
-module.exports.logFunction = logFunction;
+module.exports = myFunction; // export Entire Module
 
 // module.exports.url = url         //true
 // module.exports.endpoint = url    //true
