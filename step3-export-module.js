@@ -1,4 +1,6 @@
 
+// create a module
+
 const url = "https://mywebsite.com/logger"
 
 function myFunction(message) {
@@ -6,11 +8,13 @@ function myFunction(message) {
     console.log(`message: `, message)
 }
 
-console.log(`Console Only`)
-
 // myFunction("This is simple Message!")
 
-module.exports = myFunction; // export Entire Module
+module.exports = myFunction // export Function
+// myFunction [Function: myFunction]
+
+// module.exports.obj = myFunction; // export Obj  ect
+// myFunction { myFunction: [Function: myFunction] }
 
 // module.exports.url = url         //true
 // module.exports.endpoint = url    //true
