@@ -1,11 +1,12 @@
-const myFunction = require("./step3-export-module");
+// Loading or Import Module
 
+const obj = require("./step3-export-module");
 
-// console.log(logger)                          //true
 // myFunction("Message from step4")             //true
 
 
-console.log(`myFunction`, myFunction)
+obj("Message from step4")
 
+// console.log(`obj`, obj)
 
 
